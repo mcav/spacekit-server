@@ -1,0 +1,31 @@
+{
+  "name": "spacekit-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard",
+    "server": "PORT=80 node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/spacekit/spacekit-server.git"
+  },
+  "author": "",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/spacekit/spacekit-server/issues"
+  },
+  "homepage": "https://github.com/spacekit/spacekit-server#readme",
+  "dependencies": {
+    "ws": "1.0.1"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.1.2",
+    "standard": "^6.0.7"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
