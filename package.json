@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "standard",
+    "lint": "semistandard",
     "server": "PORT=80 node server"
   },
   "repository": {
@@ -19,11 +19,13 @@
   },
   "homepage": "https://github.com/spacekit/spacekit-server#readme",
   "dependencies": {
+    "aws-sdk": "^2.2.38",
+    "node-uuid": "^1.4.7",
     "ws": "1.0.1"
   },
   "devDependencies": {
     "pre-commit": "^1.1.2",
-    "standard": "^6.0.7"
+    "semistandard": "^7.0.5"
   },
   "pre-commit": [
     "lint"
